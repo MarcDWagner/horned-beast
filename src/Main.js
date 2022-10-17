@@ -1,8 +1,7 @@
 import React from 'react';
 
 
-
-class Main extends React.component {
+class Main extends React.Component {
   render(){
     return (
       <>
