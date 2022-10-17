@@ -1,4 +1,5 @@
 import React from 'react';
+import HornedBeast from './HornedBeast';
 
 
 class Main extends React.Component {
@@ -6,7 +7,7 @@ class Main extends React.Component {
     return (
       <>
       <main>
-        <p>Created successfully</p>
+        <HornedBeast />
         </main>
       </>
     )
