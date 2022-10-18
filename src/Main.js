@@ -2,6 +2,7 @@ import React from 'react';
 import HornedBeast from './HornedBeast';
 import data from './data.json';
 import './Main.css';
+import './HornedBeast.css';
 // import rhinos from './rhinos.bmp';
 
 class Main extends React.Component {
