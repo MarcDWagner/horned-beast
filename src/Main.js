@@ -1,12 +1,26 @@
 import React from 'react';
 import HornedBeast from './HornedBeast';
+import data from './data.json';
 // import rhinos from './rhinos.bmp';
 
 class Main extends React.Component {
   render(){
+    let allBeasts = []
+
+    data.forEach((beast, index)=>{
+      allBeasts.push(
+        <HornedBeast
+        title={beast.title}
+        imageURL={beast.imageURL}
+        key={index}
+        />
+      )
+    });
+
     return (
       <>
       <main>
+
         <HornedBeast 
         title="Uniwahl" 
         imgURL="" 
