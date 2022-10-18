@@ -9,12 +9,15 @@ class Main extends React.Component {
       <main>
         <HornedBeast 
         title="Uniwahl" 
-        imgURL="" description="A unicorn and a narwhal nuzzling their horns" />
+        imgURL="" 
+        description="A unicorn and a narwhal nuzzling their horns" />
         <HornedBeast 
         title="Rhino Family" 
-        imgURL="" description="Parent rhino with two babies" />
+        imgURL="" 
+        description="Parent rhino with two babies" />
         <HornedBeast 
-        title="Unicorn Head" imgURL="" 
+        title="Unicorn Head" 
+        imgURL="" 
         description="Someone wearing a very silly unicorn head mask" />
         </main>
       </>
