@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Overview
+
+Lab 01: First attempt as using React, components, and props.
+
 ## Available Scripts
 
 In the project directory, you can run:
