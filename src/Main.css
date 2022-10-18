@@ -1,0 +1,5 @@
+main {
+  display: flex;
+  flex-wrap: warp;
+  justify-content: space-between;
+}
