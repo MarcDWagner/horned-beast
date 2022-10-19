@@ -12,11 +12,11 @@ class Main extends React.Component {
     data.forEach((beast, index)=>{
       allBeasts.push(
         <HornedBeast
-        title={beast.title}
-        image_url={beast.image_url}
-        description={beast.description}
-        horns={beast.horns}
-        key={index}
+          title={beast.title}
+          image_url={beast.image_url}
+          description={beast.description}
+          horns={beast.horns}
+          key={index}
         />
       )
     });
