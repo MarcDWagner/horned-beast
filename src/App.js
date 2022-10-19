@@ -3,10 +3,9 @@ import React from 'react';
 import Header from './Header.js';
 import Main from './Main.js';
 import Footer from './Footer.js';
-// import HornedBeast from './HornedBeast.js';
+
 import './App.css';
-import Modal from 'react-bootstrap/Modal';
-import data from './data.jason';
+import data from './data.json';
 
 // class components
 class App extends React.Component{
@@ -14,8 +13,8 @@ class App extends React.Component{
     super(props);
     this.state = {
       heart: '',
-      showModal: false,
-      selectedPhoto: {}
+      // showModal: false,
+      // selectedPhoto: {}
     }
   }
 
@@ -25,18 +24,7 @@ class App extends React.Component{
       })
     }
 
-    handleCloseModal = () => {
-      this.setState({
-        showModal: false
-      })
-    }
 
-    handleOpenModal = (photo) => {
-      this.setState({
-        showModal: true,
-        selectedPhoto: photo,
-      })
-    }
 
   render(){
     return (
@@ -49,14 +37,7 @@ class App extends React.Component{
           handleOpenModal={this.handleOpenModal}
           data={data}
           />
-          <Modal 
-            show={this.state.showModal}
-            onHide={this.handleCloseModal}
-            >
-              <Modal.Header closeButton>
-                <Modal.Title>{this.state.selectedPhoto}</Modal.Title>
-              </Modal.Header>
-          </Modal>
+
         <Footer />
       </>
     )

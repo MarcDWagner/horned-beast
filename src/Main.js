@@ -1,13 +1,12 @@
 import React from 'react';
 import HornedBeast from './HornedBeast';
+import SelectedBeast from './SelectedBeast';
 import './Main.css';
 
 
 
 class Main extends React.Component {
   render() {
-
-
     let allBeasts = this.props.data.map((beast, index) => {
       return <HornedBeast
         title={beast.title}
@@ -19,7 +18,10 @@ class Main extends React.Component {
         handleOpenModal={this.props.handleOpenModal}
       />
     });
-    console.log(allBeasts);
+    // console.log(allBeasts);
+
+
+
 
   return(
       <>
