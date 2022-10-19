@@ -1,4 +1,6 @@
 import React from 'react';
+import './HornedBeast.css';
+import Button from 'react-bootstrap/Button';
 
 class HornedBeast extends React.Component {
   constructor(props){
@@ -22,7 +24,7 @@ class HornedBeast extends React.Component {
         <img src={this.props.image_url} alt={this.props.title} />
         <p>{this.props.description}</p>
         <p>Number of Horns: {this.props.horns}</p>
-        <p onClick={this.handleVotes}>Vote here</p>
+        <Button onClick={this.handleVotes}variant="secondary">Vote Here</Button>
         <p>{this.state.votes} Votes</p>
       </article>
     )
