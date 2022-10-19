@@ -11,32 +11,12 @@ class SelectedBeast extends React.Component {
     }
   }
 
-  handleCloseModal = () => {
-    this.setState({
-      showModal: false
-    })
-  }
-
-  handleOpenModal = (photo) => {
-    this.setState({
-      showModal: true,
-      selectedPhoto: photo,
-    })
-  }
-
-
-
-
   render() {
     return (
-      <Modal
-        show={this.state.showModal}
-        onHide={this.handleCloseModal}
-      >
-        <Modal.Header closeButton>
-          <Modal.Title>{this.state.selectedPhoto}</Modal.Title>
-        </Modal.Header>
-      </Modal>
+      <article>
+
+      </article>
+
     )
   }
 }
