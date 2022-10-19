@@ -17,18 +17,27 @@ class HornedBeast extends React.Component {
     })
   }
 
+  handlePhotoClick = () => {
+    this.props.handleOpenModal(this.props.photo)
+  }
+
   render() {
     return (
       <article>
         {/* <img src={this.props.image_url} alt={this.props.title} /> */}
         <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={this.props.image_url} alt={this.props.title} />
+        <Card.Img 
+          variant="top" 
+          src={this.props.image_url} 
+          alt={this.props.title} 
+          onClick={this.props.handleOpenModal} 
+          />
         <Card.Body>
         <Card.Title>{this.props.title}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{this.props.description}</Card.Subtitle>
-        <Card.Text>{this.props.horns}</Card.Text>
+        <Card.Text>Horns: {this.props.horns}</Card.Text>
         <Button onClick={this.handleVotes}variant="secondary">Vote Here</Button>
-        <p>♥️Favorited {this.state.votes} Times♥️</p>
+        <p onClick={this.props.addHearts}>♥️Favorited {this.state.votes} Times♥️</p>
         </Card.Body>
         </Card>
          {/* <h2>{this.props.title}</h2> */}
