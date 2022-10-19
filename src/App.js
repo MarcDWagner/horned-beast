@@ -13,17 +13,17 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      heart: '',
-      // showModal: false,
+      // check: '✔️',
+      showModal: false,
       // selectedPhoto: {}
     }
   }
 
-  addHearts = () => {
-    this.setState({
-      heart: this.state.heart + 'heart'
-    })
-  }
+  // addCheckMark = () => {
+  //   this.setState({
+  //     check: this.state.check + '✔️'
+  //   })
+  // }
 
   handleCloseModal = () => {
     this.setState({
@@ -35,7 +35,7 @@ class App extends React.Component {
   handleOpenModal = (photo) => {
     this.setState({
       showModal: true,
-      selectedPhoto: photo,
+      // selectedPhoto: photo,
     })
   }
 
@@ -43,20 +43,20 @@ class App extends React.Component {
     return (
       <>
         <Header
-          heart={this.state.heart}
+        // check={this.state.check}
         />
         <Main
-          addHearts={this.addHearts}
+          // addCheckMark={this.addCheckMark}
           handleOpenModal={this.handleOpenModal}
           data={data}
         />
         <Modal
           show={this.state.showModal}
-          // onHide={this.handleCloseModal}
+          onHide={this.handleCloseModal}
         >
-          <Modal.Header closeButton>
+          {/* <Modal.Header closeButton>
             <Modal.Title>{this.state.selectedPhoto}</Modal.Title>
-          </Modal.Header>
+          </Modal.Header> */}
         </Modal>
         <Footer />
       </>

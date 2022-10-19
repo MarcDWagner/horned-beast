@@ -14,7 +14,7 @@ class Main extends React.Component {
         description={beast.description}
         horns={beast.horns}
         key={index}
-        addHearts={this.props.addHearts}
+        // addCheckMark={this.props.addCheckMark}
         handleOpenModal={this.props.handleOpenModal}
       />
     });
