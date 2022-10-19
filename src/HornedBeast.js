@@ -25,7 +25,7 @@ class HornedBeast extends React.Component {
         <p>{this.props.description}</p>
         <p>Number of Horns: {this.props.horns}</p>
         <Button onClick={this.handleVotes}variant="secondary">Vote Here</Button>
-        <p>{this.state.votes} Votes</p>
+        <p>♥️Favorited {this.state.votes} Times♥️</p>
       </article>
     )
   }
