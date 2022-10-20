@@ -36,10 +36,13 @@ class App extends React.Component {
     })
   }
 
-  handleOpenModal = () => {
+  handleOpenModal = (beastObj) => {
     this.setState({
       showModal: true,
-      // selectedPhoto: photo,
+      // titleclicked: title, 
+      // imageclicked: image_url,
+      // desclicked: description,
+      selectedBeast: beastObj,
     })
   }
 
