@@ -5,8 +5,7 @@ import Main from './Main.js';
 import Footer from './Footer.js';
 import './App.css';
 import data from './data.json';
-import Modal from 'react-bootstrap/Modal';
-import SelectedBeast from './SelectedBeast';
+import SelectedBeast from './SelectedBeast.js';
 
 // class components
 class App extends React.Component {

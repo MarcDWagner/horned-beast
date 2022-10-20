@@ -1,5 +1,5 @@
 import React from 'react';
-import HornedBeast from './HornedBeast';
+import HornedBeast from './HornedBeast.js';
 
 import './Main.css';
 

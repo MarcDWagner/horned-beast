@@ -24,13 +24,15 @@ class SelectedBeast extends React.Component {
         </Modal.Header>
         <Modal.Body>
           <Card className="text-center">
-            <Card.Header>{}</Card.Header>
+            <Card.Header>{this.props.title}</Card.Header>
             <Card.Img
               variant="top"
+              src={this.props.image_url}
+              alt={this.props.title}
             />
             <Card.Body>
-              <Card.Title>{}</Card.Title>
-              <Card.Text>{}</Card.Text>
+              <Card.Title>{this.props.description}</Card.Title>
+              <Card.Text>{this.props.horns}</Card.Text>
               {/* <Button variant="primary">Go somewhere</Button> */}
             </Card.Body>
           </Card>
