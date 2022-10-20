@@ -4,3 +4,6 @@ main {
   justify-content: space-between;
 }
 
+.card-img-top {
+  border: solid teal;
+}
