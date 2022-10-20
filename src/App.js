@@ -14,7 +14,7 @@ class App extends React.Component {
     this.state = {
       // check: '✔️',
       showModal: false,
-      // selectedPhoto: {}
+      selected: {}
     }
   }
 
@@ -37,6 +37,7 @@ class App extends React.Component {
   }
 
   handleOpenModal = (beastObj) => {
+    console.log(beastObj);
     this.setState({
       showModal: true,
       // titleclicked: title, 
@@ -44,6 +45,7 @@ class App extends React.Component {
       // desclicked: description,
       selected: beastObj,
     })
+    console.log(this.state.selected)
   }
 
   render() {
@@ -62,7 +64,7 @@ class App extends React.Component {
           show={this.state.showModal}
           onHide={this.handleCloseModal}
           // selectedPhoto={this.state.selectedPhoto}
-          selected={this.state.beastObj}
+          selected={this.state.selected}
         />
         <Footer />
       </>

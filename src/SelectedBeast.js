@@ -13,9 +13,10 @@ class SelectedBeast extends React.Component {
         onHide={this.props.onHide}
         >
         <Modal.Header closeButton>
+          <Modal.Title>{this.props.selected.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-        <p>{this.props.beastObj}</p>
+        <p>body</p>
         </Modal.Body>
       </Modal>
     )
