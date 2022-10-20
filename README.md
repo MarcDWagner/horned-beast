@@ -3,13 +3,14 @@
 
 ## Overview
 
-Lab 01: First attempt as using React, components, and props.
+Lab 01:  First attempt as using React, components, and props.
 
-Lab 02:  A little more experience working with the components and props, also adding in state and bootstrap.
+Lab 02:  A little more experience working with the components and props, also adding in state and bootstrap feature of a card.
 
-hub.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Lab 03:  Created a new component to create new modal feature with the help of bootstrap, passing information through use of state.
 
 ## Time Estimates
+
 ### 10-18-22 Lab 02
 
 - Number and Name of Feature:  #1, Display Images
@@ -30,6 +31,14 @@ hub.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 - Finish time:  1745;  2030
 - Actual time needed to complete:  1.5
 
+### 10-19-22 Lab 03
+
+- Number and Name of Feature:  #1, Display a Model 
+- Estimate of time needed to complete:  2 hours
+- Start time:  1330
+- Finish time:  1800
+- Actual time needed to complete:  4.5
+- Mostly Completed
 
 
 
