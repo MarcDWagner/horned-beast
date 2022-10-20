@@ -25,14 +25,19 @@ class App extends React.Component {
   //   })
   // }
 
-  handleCloseModal = () => {
+  photoDetail = () => {
     this.setState({
-      showModal: false,
-
+      selectedPhoto: this.state.selectedPhoto
     })
   }
 
-  handleOpenModal = (photo) => {
+  handleCloseModal = () => {
+    this.setState({
+      showModal: false,
+    })
+  }
+
+  handleOpenModal = () => {
     this.setState({
       showModal: true,
       // selectedPhoto: photo,
@@ -47,17 +52,15 @@ class App extends React.Component {
         />
         <Main
           // addCheckMark={this.addCheckMark}
+          photoDetail={this.photoDetail}
           handleOpenModal={this.handleOpenModal}
-          data={data}
-        />
-        <Modal
+          data={data}       
+          />
+        <SelectedBeast
           show={this.state.showModal}
           onHide={this.handleCloseModal}
-        >
-          {/* <Modal.Header closeButton>
-            <Modal.Title>{this.state.selectedPhoto}</Modal.Title>
-          </Modal.Header> */}
-        </Modal>
+          selectedPhoto={this.state.selectedPhoto}   
+        />
         <Footer />
       </>
     )
