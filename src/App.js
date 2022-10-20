@@ -37,7 +37,7 @@ class App extends React.Component {
   }
 
   handleOpenModal = (beastObj) => {
-    console.log(beastObj);
+
     this.setState({
       showModal: true,
       // titleclicked: title, 
@@ -45,7 +45,7 @@ class App extends React.Component {
       // desclicked: description,
       selected: beastObj,
     })
-    console.log(this.state.selected)
+ 
   }
 
   render() {
