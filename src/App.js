@@ -24,11 +24,11 @@ class App extends React.Component {
   //   })
   // }
 
-  photoDetail = () => {
-    this.setState({
-      selectedPhoto: this.state.selectedPhoto
-    })
-  }
+  // photoDetail = () => {
+  //   this.setState({
+  //     selectedPhoto: this.state.selectedPhoto
+  //   })
+  // }
 
   handleCloseModal = () => {
     this.setState({
@@ -42,7 +42,7 @@ class App extends React.Component {
       // titleclicked: title, 
       // imageclicked: image_url,
       // desclicked: description,
-      selectedBeast: beastObj,
+      selected: beastObj,
     })
   }
 
@@ -61,7 +61,8 @@ class App extends React.Component {
         <SelectedBeast
           show={this.state.showModal}
           onHide={this.handleCloseModal}
-          selectedPhoto={this.state.selectedPhoto}   
+          // selectedPhoto={this.state.selectedPhoto}
+          selected={this.state.beastObj}
         />
         <Footer />
       </>
