@@ -14,42 +14,38 @@ class App extends React.Component {
     this.state = {
       // check: '✔️',
       showModal: false,
-      selected: {}
+      selected: {},
+      inputValue: '',
+      sortedHorns: horns,
     }
   }
-
-  // addCheckMark = () => {
-  //   this.setState({
-  //     check: this.state.check + '✔️'
-  //   })
-  // }
-
-  // photoDetail = () => {
-  //   this.setState({
-  //     selectedPhoto: this.state.selectedPhoto
-  //   })
-  // }
 
   handleCloseModal = () => {
     this.setState({
       showModal: false,
     })
   }
-
+  
   handleOpenModal = (beastObj) => {
-
     this.setState({
       showModal: true,
-      // titleclicked: title, 
-      // imageclicked: image_url,
-      // desclicked: description,
       selected: beastObj,
     })
- 
+   }
+   
+  hornInput = (event) => {
+    event.preventDefault();
+    let input = event.target.value;
+
+    this.setState({
+      inputValue: input
+    })
   }
 
-  render() {
-    return (
+  
+
+   render() {
+     return (
       <>
         <Header
         // check={this.state.check}
@@ -74,3 +70,8 @@ class App extends React.Component {
 
 // export
 export default App;
+      // addCheckMark = () => {
+      //   this.setState({
+      //     check: this.state.check + '✔️'
+      //   })
+      // }
