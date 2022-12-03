@@ -1,9 +1,17 @@
 main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: stretch;
+  justify-content: space-around;
 }
 
 .card-img-top {
   border: solid teal;
+}
+
+.hornedBeastCard {
+  box-shadow: 0px 10px 5px 10px #000;
+  padding: 10px;
+  /* opacity: 50%; */
+
 }

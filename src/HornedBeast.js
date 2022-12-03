@@ -25,7 +25,7 @@ class HornedBeast extends React.Component {
     return (
       <article>
 
-        <Card style={{ width: '18rem' }}>
+        <Card style={{ width: '18rem' }} className="hornedBeastCard">
           <Card.Img
             variant="top"
             src={this.props.image_url}
